@@ -3,7 +3,9 @@
 DEBIAN_FRONTEND=noninteractive
 # Installer le serveur apache et les librairies php 
 apt-get update
+
 apt-get -y upgrade
+
 apt-get -y install apache2 php libapache2-mod-php php-gd  php-curl php-json php-mbstring php-mysql php-xml php-xsl php-zip
 # Copier le fichier index.php du dossier site dans  /var/www/html
 # Supprimer le fichier /var/www/html/index.html
