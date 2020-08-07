@@ -1,3 +1,5 @@
+# Objectif du TP:
+Création d'une image nommée *apache-php* et dont le tag est 1.0.0
 # Utiliser l'image de base ubuntu version 18.04
 # Ajouter la varaible d'environnement ci-dessous pour éviter que l'installation des paquets avec apt-get ne soit interactif
 DEBIAN_FRONTEND=noninteractive
