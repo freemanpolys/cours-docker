@@ -1,11 +1,5 @@
-ARG NODE_VERSION
-FROM node:$NODE_VERSION
-ARG APP_DIR
-RUN mkdir -p $APP_DIR
-WORKDIR $APP_DIR
-COPY package.json .
-RUN npm install --silent
+FROM ubuntu:trusty
+RUN mkdir /work
+WORKDIR /work
 COPY . .
-EXPOSE 4200
-ENV PORT 4200
-CMD [ "npm", "start" ]
+CMD ["/bin/ping","localhost"]

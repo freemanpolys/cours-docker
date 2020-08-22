@@ -1,4 +1,4 @@
 #!/bin/bash
-docker rm -f mynginx
-docker run -d --name mynginx -p 8880:80 my-nginx:0.0.4
-docker exec mynginx ls /usr/share/nginx/html/
+docker build -t my-image:0.0.1 .
+docker rm -f mycontainer
+docker run --rm -it  my-image:0.0.1 sh
