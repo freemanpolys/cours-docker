@@ -1,4 +1,4 @@
-FROM library/golang
+FROM library/golang:1.15.15
 
 # Godep for vendoring
 RUN go get github.com/tools/godep
